@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "first-extension",
+  "version": "1.0",
+
+  "description": "Our very first browser extension!",
+
+  "content_scripts": [
+      {
+        "matches": ["*://*.linkedin.com/*"],
+        "js": ["first-extension.js"]
+      }
+    ],
+   "web_accessible_resources": ["images/kitten.jpg"]
+}
+
